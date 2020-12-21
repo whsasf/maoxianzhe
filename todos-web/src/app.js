@@ -10,6 +10,7 @@ import Nav from "./containers/nav";
 import Loading from "./components/loading";
 import Home from "./containers/home";
 import Login from "./containers/login";
+import Todos from "./containers/todos";
 
 const { Content, Footer, Header } = Layout;
 
@@ -47,6 +48,7 @@ const Main = () => (
       <Switch>
         <Route path="/" exact component={Home} />
         {/* template-example-start */}
+        <Route path="/Todos" component={Todos} />
         <Route path="/github" component={Github} />
         <Route path="/pet-store" component={PetStore} />
         <Route path="/redux-ui" component={ReduxUi} />

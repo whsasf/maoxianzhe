@@ -4,6 +4,7 @@ import {
   ShopOutlined,
   GithubOutlined,
   FormOutlined,
+  SnippetsOutlined,
 } from "@ant-design/icons";
 
 export const menu = [
@@ -13,6 +14,11 @@ export const menu = [
     icon: <HomeOutlined />,
   },
   /* template-example-start */
+  {
+    path: "/Todos",
+    title: "Todos",
+    icon: <SnippetsOutlined />,
+  },
   {
     path: "/pet-store",
     title: "Pet-store",
