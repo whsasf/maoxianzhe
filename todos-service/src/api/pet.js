@@ -19,6 +19,7 @@ export default class {
       const req = {
         query: ctx.query,
       };
+      console.log(req);
       const res = await this.listPets(req, ctx);
       ctx.body = res.content;
       ctx.set("X-Total-Count", res.headers["X-Total-Count"]);
@@ -29,6 +30,7 @@ export default class {
       const req = {
         body: ctx.request.body,
       };
+      console.log("createpet", req);
       const res = await this.createPet(req, ctx);
       ctx.body = res.content;
       ctx.status = 201;
